@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Albert Murph - Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background-color: #0d6efd;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .project-card {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Albert Murph</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Albert Murph</h1>
+      <p class="lead">Full Stack Developer | JavaScript, React, Angular, Node.js | Based in NYC</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm a Full Stack Developer who transitioned from operations management to software development. With hands-on experience in JavaScript, React, Angular, Node.js, and MySQL, I’ve built web applications that are both functional and user-friendly. My past roles in leadership and logistics help me bring unique problem-solving skills to every coding challenge.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 project-card">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Angular SPA</h5>
+            <p class="card-text">A single-page Angular application with component-based architecture. Built with Angular CLI and TypeScript.</p>
+            <a href="https://github.com/ajm49" class="btn btn-primary" target="_blank">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">CRUD App (React + MySQL)</h5>
+            <p class="card-text">Full stack app with Express backend and React frontend. Users can create, read, update, and delete records.</p>
+            <a href="https://github.com/ajm49" class="btn btn-primary" target="_blank">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Personal Portfolio Website</h5>
+            <p class="card-text">This very website, built using Bootstrap, jQuery, and HTML5 to showcase my work and skills.</p>
+            <a href="https://github.com/ajm49" class="btn btn-primary" target="_blank">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Languages: JavaScript, HTML5, CSS3</li>
+      <li class="list-group-item">Frameworks: React, Angular, Bootstrap, jQuery</li>
+      <li class="list-group-item">Backend: Node.js, Express.js</li>
+      <li class="list-group-item">Database: MySQL</li>
+      <li class="list-group-item">Tools: Git, GitHub, AWS, Agile, VS Code</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container my-5">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="mailto:albert.murph@gmail.com" method="post" enctype="text/plain">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Albert Murph. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
